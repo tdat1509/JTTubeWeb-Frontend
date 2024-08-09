@@ -1,0 +1,87 @@
+
+.slider {
+    width: 100%; 
+    max-width: 600px; 
+    height: 400px; 
+    margin: 0 auto; 
+    overflow: hidden; 
+    position: relative; 
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+}
+
+
+.slides {
+    display: flex; 
+    transition: transform 1s ease-in-out; 
+    height: 100%; 
+}
+
+.slides img {
+    flex: 0 0 100%; 
+    height: 100%; 
+    object-fit: contain; 
+    border-radius: 5px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+
+@keyframes slide {
+    0% { transform: translateX(0); }
+    33.33% { transform: translateX(-100%); } 
+    66.66% { transform: translateX(-200%); } 
+    100% { transform: translateX(0); } 
+}
+
+.slides {
+    animation: slide 15s infinite;
+}
+
+
+.slider:hover .slides {
+    animation-play-state: paused;
+}
+
+.qc-section-type {
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    position: relative; 
+    overflow: hidden; 
+}
+
+.qc-meta {
+    margin-top: 20px;
+    padding-left: 20px;
+    color: #333;
+    font-family: segoe ui light;
+    opacity: 0; 
+    transform: translateY(20px); 
+    transition: all 0.5s ease-in-out; 
+}
+
+
+.qc-section-type:hover .qc-meta {
+    opacity: 1; /* Hiển thị chữ */
+    transform: translateY(0); /* Di chuyển chữ lên vị trí ban đầu */
+}
+
+
+.qc-item-title {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+
+.qc-item-subtitle {
+    font-size: 1.2em;
+    color: #7f8c8d;
+    margin-bottom: 15px;
+    font-style: italic;
+}

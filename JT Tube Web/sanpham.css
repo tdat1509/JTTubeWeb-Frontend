@@ -1,0 +1,64 @@
+.product-item {
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    transition: 0.4s;
+    border-radius: 5px;
+}
+.product-category-list .product-category, .product-item .product-meta .product-title {
+    font-size: 1.5rem !important;
+    line-height: 1.5 !important;
+    font-family: 'Phudu';
+    text-align: center;
+}
+.product-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.product-content {
+    background-color: #fff;
+    padding: 15px;
+    border: 1px solid #ddd;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    transition: 0.4s;
+
+}
+
+.product-item:hover .product-content {
+    background-color: #f8f8f8;
+}
+
+.product-content img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+    transition: 0.4s;
+
+}
+.product-item:hover img {
+transition: 0.4s;
+}
+.product-item:hover img {
+    transform: scale(1.1);
+}
+
+.product-content h3 {
+    margin: 10px 0;
+    font-size: 1.5rem;
+}
+
+.product-content p {
+    color: #777;
+    font-size: 1rem;
+}
+.page-title-section {
+    border-bottom: 1px solid #000000;
+    padding: 55px 0 60px;
+    margin: 0 30px;
+}
+.product-category-list {
+    display: flex;
+    padding: 30px 0 57px;
+}

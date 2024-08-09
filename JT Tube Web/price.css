@@ -1,0 +1,41 @@
+
+.product-name
+{
+    font-family: 'Phudu', sans-serif;
+}
+.product-price
+{
+    font-family: 'Phudu', sans-serif;
+}
+.product-info .product-description
+{
+    font-family: segoe ui light;
+}
+.product-info .partial-contact-us__cta {
+    margin-bottom: 32px;
+    font-family: segoe ui light;
+    font-size: 24px !important;
+}
+.product-info .product-status, .product-category
+{
+    font-family: 'Phudu', sans-serif;
+}
+.blog-relate-list__wrapper .title {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 33px;
+    color: #ff0000;
+    margin-bottom: 35px;
+    font-family: 'Phudu';
+    font-size: 25px !important;
+}
+.blog-relate-list .blog-relate {
+    display: flex;
+    flex-flow: column nowrap;
+    flex: 1;
+    font-family: 'Phudu';
+}
+.partial-contact-us__title
+{
+    font-family: phudu;
+}

@@ -1,0 +1,100 @@
+.danhmucsanpham {
+    width: auto;
+    height: 500px;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.danhmucsanpham img.pic {
+    height: 500px;
+    width: 500px;
+}
+
+.page-title-section h1 {
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 56px;
+    text-transform: capitalize;
+    color: #333333;
+    font-family: 'Phudu';
+    justify-content: center;
+}
+
+.qc-section-type {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.qc-row {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.qc-item {
+    display: flex;
+    width: 45%;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    position: relative;
+    transition: transform 0.3s;
+}
+
+.qc-item:hover {
+    transform: scale(1.05);
+    animation-play-state: paused;
+}
+.slider:hover .slides {
+    animation-play-state: paused;
+}
+.qc-image {
+    flex: 1;
+    position: relative;
+}
+
+.qc-meta {
+    flex: 1;
+    text-align: left;
+    padding-left: 20px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+}
+
+.qc-item:hover .qc-meta {
+    opacity: 1;
+}
+
+.title {
+    text-align: center !important;
+    font-size: 19px !important;
+    margin-bottom: 20px !important;
+}
+
+.qc-item-title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.qc-item-subtitle {
+    font-size: 16px;
+    color: #555;
+}

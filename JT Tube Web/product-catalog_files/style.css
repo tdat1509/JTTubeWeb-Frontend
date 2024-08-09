@@ -1,0 +1,151 @@
+
+.taxonomy-images-the-terms {
+	margin: 10px 0;
+	padding: 0;
+	zoom: 1;
+}
+
+.taxonomy-images-the-terms:before,
+.taxonomy-images-the-terms:after {
+	clear: both;
+	content: "\0020";
+	display: block;
+	height: 0;
+	visibility: hidden;
+}
+
+.taxonomy-images-the-terms li,
+.taxonomy-images-the-terms a,
+.taxonomy-images-the-terms img {
+	float: left;
+	margin: 0;
+	padding: 0;
+}
+
+.taxonomy-images-the-terms li {
+	list-style-type: none;
+	margin: 0 10px 10px 0;
+}
+
+.slider {
+    width: 100%; 
+    max-width: 600px; 
+    height: 400px; 
+    margin: 0 auto; 
+    overflow: hidden; 
+    position: relative; 
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+}
+
+
+.slides {
+    display: flex; 
+    transition: transform 1s ease-in-out; 
+    height: 100%; 
+}
+
+.slides img {
+    flex: 0 0 100%; 
+    height: 100%; 
+    object-fit: contain; 
+    border-radius: 5px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+
+@keyframes slide {
+    0% { transform: translateX(0); }
+    33.33% { transform: translateX(-100%); } 
+    66.66% { transform: translateX(-200%); } 
+    100% { transform: translateX(0); } 
+}
+
+.slides {
+    animation: slide 15s infinite;
+}
+
+
+.slider:hover .slides {
+    animation-play-state: paused !important;
+}
+
+.qc-section-type {
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    position: relative; 
+    overflow: hidden; 
+
+
+.qc-meta {
+    margin-top: 20px;
+    padding-left: 20px;
+    color: #333;
+    font-family: segoe ui light;
+    opacity: 0; 
+    transform: translateY(20px); 
+    transition: all 0.5s ease-in-out; 
+}
+
+
+.qc-section-type:hover .qc-meta {
+    opacity: 1; 
+    transform: translateY(0); 
+}
+
+
+.qc-item-title {
+    font-size: 25px;
+    font-weight: bold;
+    color: #d72630;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+
+.qc-item-subtitle {
+    font-size: 20px;
+    color: #0000008f;
+    margin-bottom: 15px;
+    margin-left: 5px;
+    font-style: italic;
+}
+#back-to-top {
+    position: fixed;
+    right: 21px;
+    bottom: 20vh;
+    width: 44px;
+    height: 44px;
+    z-index: 1000;
+    border-radius: 50%;
+    background: #D72630;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+    text-align: center;
+    flex-wrap: nowrap;
+    align-content: center;
+    display: none;  /* Ẩn nút mặc định */
+}
+
+#back-to-top i {
+    font-size: 1rem;
+    color: white;
+}
+
+#back-to-top img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+#back-to-top:hover {
+    cursor: pointer;
+    filter: brightness(110%);
+}
